@@ -29,7 +29,6 @@ def process_cycle() :
 def read_instruction(instruction) :
 	global CLOCK, TOTAL_SIG_STR
 	instruction = instruction.split(" ")
-	instruction = [instruction[i] if i <= len(instruction)-1 else None for i in range(3)]
 	for cycle in range(INSTRUCTION_CATALOG[instruction[0]]["cycle_length"]) :
 		process_cycle()	
 	INSTRUCTION_CATALOG[instruction[0]]["function"](instruction[1:])
