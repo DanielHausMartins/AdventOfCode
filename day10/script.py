@@ -89,4 +89,3 @@ while CLOCK < CRT_HEIGHT * CRT_WIDTH :
 mywindow.addstr(10,0, f"Total signal strength : {TOTAL_SIG_STR}. Press any key to end program.")
 mywindow.getch()
 curses.endwin()
-
